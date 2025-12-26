@@ -66,5 +66,4 @@ Built using **modern full-stack technologies** with clean architecture and best 
 
 ---
 
-## 📁 Project Structure
 
