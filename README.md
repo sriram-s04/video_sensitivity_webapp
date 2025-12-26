@@ -1,60 +1,70 @@
-🎬 Video Upload & Sensitivity Processing Web App
-Overview
+# 🎬 Video Upload & Sensitivity Processing Web App
 
-This is a full-stack web application that allows users to upload videos, process them for content sensitivity analysis, and stream them in real-time. It features user authentication, role-based access, multi-tenant architecture, and live progress tracking for video processing.
+A **full-stack web application** that allows users to upload videos, analyze them for content sensitivity, and stream them efficiently with real-time progress tracking.  
+The application supports **multi-tenant architecture**, **role-based access control**, and **secure video streaming**.
 
-Features
-User Features
+---
 
-Secure Login & Registration.
+## 📌 Overview
 
-Upload Videos with progress tracking.
+This project demonstrates a complete **end-to-end video processing workflow**, including:
 
-Real-time processing updates for sensitivity analysis (safe/flagged).
+- Secure user authentication
+- Video upload & storage
+- Automated sensitivity analysis (safe / flagged)
+- Real-time processing updates
+- HTTP range-based video streaming
+- Multi-tenant user isolation
+- Role-based access control (RBAC)
 
-Video Library with list of uploaded videos.
+Built using **modern full-stack technologies** with clean architecture and best practices.
 
-Stream Videos directly in the web app.
+---
 
-Role-based access:
+## ✨ Features
 
-Viewer: Can view videos.
+### 👤 User Features
 
-Editor: Can upload and manage videos.
+- Secure **Login & Registration**
+- Upload videos with **progress tracking**
+- Real-time processing updates for sensitivity analysis
+- Video library showing uploaded videos & status
+- Stream videos directly in the browser
+- Role-based permissions:
+  - **Viewer** → View videos only
+  - **Editor** → Upload & manage videos
+  - **Admin** → Full system access
 
-Admin: Full system access.
+---
 
-Admin Features
+### 🛠️ Admin Features
 
-Manage users and roles.
+- Manage users and roles
+- Monitor video processing across tenants
+- Full access to system resources
+- Multi-tenant support for organizations or groups
 
-Monitor video processing across the platform.
+---
 
-Multi-tenant support for organizations/groups.
+## 🧱 Tech Stack
 
-Technology Stack
-Frontend
+### Frontend
+- React + Vite
+- Tailwind CSS (responsive UI)
+- Axios (API communication)
+- Socket.io Client (real-time updates)
+- Context API (state management)
 
-React + Vite
+### Backend
+- Node.js + Express.js
+- MongoDB + Mongoose ODM
+- JWT Authentication
+- Multer (video uploads)
+- Socket.io (live processing status)
+- FFmpeg (video processing)
+- HTTP Range Requests (video streaming)
 
-Tailwind CSS for responsive & modern UI
+---
 
-Axios for API calls
+## 📁 Project Structure
 
-Socket.io for real-time updates
-
-Context API for state management
-
-Backend
-
-Node.js + Express.js
-
-MongoDB + Mongoose ODM
-
-JWT Authentication
-
-Multer for video upload
-
-Socket.io for live progress
-
-Video streaming with HTTP range requests
