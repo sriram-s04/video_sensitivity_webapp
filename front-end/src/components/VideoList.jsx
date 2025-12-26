@@ -40,7 +40,7 @@ const VideoList = () => {
             <p>Progress: {video.progress}%</p>
             <video
               className="w-full mt-2 rounded"
-              controls autoPlay
+              controls
               src={`http://localhost:5000/videos/stream/${video._id}`}
             />
           </div>
@@ -51,3 +51,4 @@ const VideoList = () => {
 };
 
 export default VideoList;
+
